@@ -10,4 +10,14 @@ h1{
     color: #b83333;
 
 
+
+}
+a h2 {
+    color: rgb(6, 9, 10);
+    transition: 0.3s;
+}
+
+a h2:hover {
+    color: #225577;
+    text-decoration: underline;
 }
