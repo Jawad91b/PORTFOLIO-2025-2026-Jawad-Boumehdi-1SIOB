@@ -1,0 +1,134 @@
+body {
+    font-size: 16px ;
+    font-family: Arial, Helvetica, sans-serif ; 
+    background-color: whitesmoke ; 
+}
+.container{
+    text-align: center ;
+    float: none ; 
+    border: 5px solid #3388CC ;
+    width: 780px ; 
+    box-shadow: 0 0 10px black ;
+    border-radius: 5px ;
+    background-color: white;
+    padding: 20px ; 
+    margin: 0 auto ; 
+    
+}
+
+.photo{
+    height: 100px ;
+    border: 3px solid black ;
+    box-shadow: 0 0 10px black ;
+    border-radius: 5px ; 
+    text-align: right ;
+    
+
+
+
+}
+section{
+    margin-bottom: 70px;
+
+
+}
+section h3{
+    font-size: 20px ; 
+    font-weight: bold ;
+
+}
+#formation{
+    border: 1px solid black;
+    border-radius: 12px ;
+
+
+
+}
+#competences{
+    border: 1px solid black;
+    border-radius: 12px ;
+
+
+
+}
+#exp{
+    border: 1px solid black;
+    border-radius: 12px ;
+
+
+
+}
+#centre{
+    border: 1px solid black;
+    border-radius: 12px ;
+
+
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        text-align: center ;
+        float: none ; 
+        border: 5px solid #3388CC ;
+        width: 95%; 
+        max-width: 780px;
+        box-shadow: 0 0 10px black ;
+        border-radius: 5px ;
+        background-color: white;
+        padding: 20px ; 
+        margin: 0 auto ; 
+        
+    }
+    
+    .photo{
+        height: 100px ;
+        border: 3px solid black ;
+        box-shadow: 0 0 10px black ;
+        border-radius: 5px ; 
+        margin: 0 auto 20px auto ;
+        
+        
+    
+    
+    
+    }
+    section{
+        margin-bottom: 70px;
+    
+    
+    }
+}
+section h3{
+    font-size: 20px ; 
+    font-weight: bold ;
+
+}
+#formation{
+    border: 1px solid black;
+    border-radius: 12px ;
+
+
+
+}
+#competences{
+    border: 1px solid black;
+    border-radius: 12px ;
+
+
+
+}
+#exp{
+    border: 1px solid black;
+    border-radius: 12px ;
+
+
+
+}
+#centre{
+    border: 1px solid black;
+    border-radius: 12px ;
+
+    }
