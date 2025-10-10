@@ -13,7 +13,7 @@ button {
     color: whitesmoke ; 
     font-size: 16px ;
     margin: auto ;
-    transition: 1s ;
+    transition: 4s ;
 
 
     
@@ -22,7 +22,8 @@ button:hover {
     background-color: whitesmoke ;
     color: rgb(79, 219, 165) ; 
     border: 2px solid white ; 
-    transition: 150ms ; 
+    transition: 1s ; 
+
 
 
 }
