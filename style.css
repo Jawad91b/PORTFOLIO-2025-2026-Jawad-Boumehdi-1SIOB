@@ -120,7 +120,10 @@ body {
       border-top: 5px solid #f1dc4f;
       background-color: RGBA(241, 211, 79, 0.15);
   }
-   
+   .menu-js:hover {
+      border-top: 5px solid #f1dc4f;
+      background-color: RGBA(241, 211, 79, 0.15);
+  }
   
   .menu-contact:hover {
       border-top: 5px solid #BBB;
@@ -164,10 +167,12 @@ body {
   }
    
   
-  .menu-js .submenu li:hover {
-      background-color: RGB(200, 165, 75);
+  .menu-certifications .submenu li:hover {
+      background-color: RGB(000, 32, 48);
   }
-   
+   .menu-mission .submenu li:hover {
+      background-color: RGB(150, 44, 16);
+  }
   
   /*Lorsque la case est cochée (dès qu'un utilisateur appuie sur notre bouton), le menu entier s'affiche*/
   nav input[type=checkbox]:checked ~ ul{
@@ -224,3 +229,4 @@ body {
           position: static;
       }
   }
+
