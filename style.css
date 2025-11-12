@@ -120,10 +120,7 @@ body {
       border-top: 5px solid #f1dc4f;
       background-color: RGBA(241, 211, 79, 0.15);
   }
-   .menu-js:hover {
-      border-top: 5px solid #f1dc4f;
-      background-color: RGBA(241, 211, 79, 0.15);
-  }
+   
   
   .menu-contact:hover {
       border-top: 5px solid #BBB;
@@ -229,4 +226,5 @@ body {
           position: static;
       }
   }
+
 
