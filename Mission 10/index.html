@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mission 10 - Base de Données Cinéma</title>
+</head>
+<body>
+    <h1>Compte-Rendu de la Mission 10 : Base de Données Cinéma</h1>
+
+    
+
+    <h2>2. Création de la Base de Données et des Tables</h2>
+    <p>
+        J'ai créé la base nommée <code>cinema_mission</code>. J'ai défini les types de données selon le besoin (INT pour les identifiants et nombres, VARCHAR pour les textes, DATE pour les dates).
+        Pour la table de jointure <code>casting</code>, j'ai défini une clé primaire composite (IDENT_FILM + IDENT_ACTEUR).
+    </p>
+
+    <h2>3. Contraintes d'intégrité</h2>
+    <p>
+        J'ai configuré les clés étrangères pour lier les tables entre elles :
+        <ul>
+            <li>Un film est lié à un réalisateur et un pays.</li>
+            <li>Le casting lie un film et un acteur.</li>
+        </ul>
+    </p>
+
+    <h2>4. Insertion des données</h2>
+    <p>
+        J'ai utilisé des requêtes SQL <code>INSERT INTO</code> pour ajouter les données des annexes en respectant l'ordre pour ne pas violer les contraintes (d'abord les pays et réalisateurs, puis les films).
+    </p>
+
+    <h2>5. Requêtes SQL (Bonus)</h2>
+    
+    <h3>Film > 90mn sortis entre 2008 et 2012</h3>
+    <img src="Capture d'écran 2025-12-09 145006.png" alt="img">
+    <pre><code>SELECT TITRE FROM film WHERE DUREE > 90 AND DATE_SORTIE BETWEEN '2008-01-01' AND '2012-12-31';</code></pre>
+    <p><em>Résultat : AVATAR</em></p>
+
+    <h3>Acteurs ayant tourné entre 40 et 90 films</h3>
+    <img src="Capture d'écran 2025-12-09 145203.png" alt="">
+    <pre><code>SELECT NOM, PRENOM FROM acteur WHERE NB_FILM BETWEEN 40 AND 90;</code></pre>
+    <p><em>Résultat : Duris, Ford, Fisher, Weaver, Reno...</em></p>
+
+    <h3>Ajout du film "Bienvenue chez les Chti's"</h3>
+    <img src="Capture d'écran 2025-12-09 145452.png" alt="">
+    <p>J'ai d'abord créé le réalisateur Dany Boon, puis ajouté le film lié à l'ID Pays 1 (France).</p>
+    <pre><code>INSERT INTO film (...) VALUES ('Bienvenue chez les Chtis', ...);</code></pre>
+
+</body>
+</html>
