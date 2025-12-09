@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Module de Facturation - GSB</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="invoice-container">
+        <header>
+            <div class="company-info">
+                <h1>GSB Laboratoire</h1>
+                <p>Adresse postale</p>
+                <p>Détails du contact</p>
+            </div>
+            <div class="invoice-details">
+                <h2>FACTURE</h2>
+                <div class="date-box">
+                    <input type="date" value="2023-01-26">
+                </div>
+                <div class="invoice-num">N° de facture</div>
+            </div>
+        </header>
+
+        <section class="addresses">
+            <div class="to">
+                <h3>Destinataire</h3>
+                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Nom de la société">
+                <input type="text" placeholder="Adresse">
+                <input type="text" placeholder="Téléphone">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="send-to">
+                <h3>Envoyez à</h3>
+                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Nom de la société">
+                <input type="text" placeholder="Adresse">
+            </div>
+        </section>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 50%;">DESCRIPTION</th>
+                    <th>QUANTITÉ</th>
+                    <th>PRIX UNITAIRE</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+                <tr class="row" id="modeleLigne">
+                    <td><input type="text" class="input desc" value="desc1"></td>
+                    <td><input type="number" class="input qte" value="0"></td>
+                    <td><input type="number" class="input prix" value="0"></td>
+                    <td><input type="text" class="input totalLigne" readonly value="0.00"></td>
+                </tr>
+                
+                <tr class="row">
+                    <td><input type="text" class="input desc" value="desc2"></td>
+                    <td><input type="number" class="input qte" value="0"></td>
+                    <td><input type="number" class="input prix" value="0"></td>
+                    <td><input type="text" class="input totalLigne" readonly value="0.00"></td>
+                </tr>
+
+                <tr id="lastLigne" style="display:none;"></tr>
+            </tbody>
+        </table>
+
+        <div class="footer-section">
+            <div class="notes">
+                <p>Remarques, notes et instructions de paiement</p>
+                <textarea rows="4" style="width: 100%;"></textarea>
+            </div>
+            <div class="totals">
+                <div class="total-row">
+                    <span>SOUS-TOTAL</span>
+                    <input type="text" id="sousTotal" readonly value="0.00">
+                </div>
+                <div class="total-row">
+                    <span>REMISE (%)</span>
+                    <input type="number" id="remise" value="10">
+                </div>
+                <div class="total-row">
+                    <span>SOUS-TOTAL MOINS REMISES</span>
+                    <input type="text" id="sousTotalRemise" readonly value="0.00">
+                </div>
+                <div class="total-row">
+                    <span>TAUX D'IMPOSITION (%)</span>
+                    <input type="number" id="tauxImpot" value="10">
+                </div>
+                <div class="total-row">
+                    <span>TAXE TOTALE</span>
+                    <input type="text" id="taxeTotale" readonly value="0.00">
+                </div>
+                <div class="total-row">
+                    <span>EXPEDITION, MANUTENTION</span>
+                    <input type="number" id="fraisExp" value="5">
+                </div>
+                <div class="total-row final">
+                    <span>SOLDE DU</span>
+                    <input type="text" id="soldeDu" readonly value="0.00 €" style="background-color: #ffb6c1; font-weight: bold;">
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button onclick="calculate()">Calculer</button>
+            <button onclick="ajouterLigne()">Ajouter une ligne</button>
+            <button onclick="remplir()">Remplir automatiquement</button>
+            <button onclick="window.location.reload()">Annuler</button>
+        </div>
+    </div>
+</body>
+</html>

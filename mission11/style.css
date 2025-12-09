@@ -1,0 +1,104 @@
+body {
+    font-family: sans-serif;
+    background-color: #eee;
+}
+
+#conteneur {
+    width: 900px;
+    margin: auto;
+    background-color: #ADD8E6;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+header {
+    background-color: black; 
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    text-align: right;
+    margin-top: 0;
+}
+
+#infos-clients {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 2px solid rgba(36, 30, 30, 0.479);
+    padding-bottom: 10px;
+}
+
+.colonne {
+    width: 45%;
+}
+
+.colonne input {
+    width: 100%;
+    margin-bottom: 5px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid gray;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th {
+   background-color: aquamarine;
+    color: white;
+    padding: 5px;
+}
+
+td {
+    border: 1px solid #ccc;
+}
+
+input.input {
+    width: 95%;
+    border: none;
+}
+
+#bas-page {
+    display: flex;
+    margin-top: 20px;
+}
+
+.remarques {
+    width: 50%;
+}
+
+.totaux {
+    width: 50%;
+    text-align: right;
+}
+
+.ligne-total {
+    margin-bottom: 5px;
+}
+
+.ligne-total input {
+    text-align: right;
+}
+
+.solde input {
+    background-color: #FFB6C1; /* Rose comme sur la maquette */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.boutons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
